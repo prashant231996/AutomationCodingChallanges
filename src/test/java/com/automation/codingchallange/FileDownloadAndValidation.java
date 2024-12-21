@@ -3,6 +3,7 @@ package com.automation.codingchallange;
 import java.io.File;
 import java.time.Duration;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -22,7 +23,7 @@ public class FileDownloadAndValidation {
 		Wait<WebDriver>wait=new FluentWait<WebDriver>(driver)
 			    .withTimeout(Duration.ofSeconds(50))
 			    .pollingEvery(Duration.ofSeconds(5))
-			    .ignoring(Exception.class);
+			    .ignoring(NoSuchElementException.class);
 	//Need to add custom wait using fluent which will wait until file downloaded successfully
 		Thread.sleep(30000);
 		String fileName="chromedriver-win64.zip";
