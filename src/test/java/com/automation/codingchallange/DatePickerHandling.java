@@ -95,7 +95,7 @@ public class DatePickerHandling {
 		   }
 		   else if(result>0)
 		   {
-			   //future future
+			   //future month
 			   driver.findElement(By.xpath("//a[@title='Next']")).click();
 		   }
 		   else
