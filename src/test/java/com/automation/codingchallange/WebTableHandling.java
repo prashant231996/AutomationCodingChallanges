@@ -1,5 +1,6 @@
 package com.automation.codingchallange;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -22,7 +23,7 @@ public class WebTableHandling {
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		driver.manage().window().maximize();
 		//Implicit Wait
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		//Explicit Wait
 		WebDriverWait wait=new WebDriverWait(driver,10);
 		//JavascriptExecuror Object

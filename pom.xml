@@ -12,11 +12,22 @@
 	<dependencies>
 	
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>3.10.0</version>
+    <version>3.14.0</version>
 </dependency>
+
+
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-api -->
+<dependency>
+  <groupId>org.seleniumhq.selenium</groupId>
+  <artifactId>selenium-api</artifactId>
+  <version>3.14.0</version>
+</dependency>
+
+
 
 	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
 <dependency>

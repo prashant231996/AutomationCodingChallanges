@@ -42,7 +42,7 @@ public class BrokenLinkValidation {
 			URL url=new URL(link);
 			HttpURLConnection conn=(HttpURLConnection)url.openConnection();
 			conn.connect();
-			if(conn.getResponseCode()==200 && conn.getResponseMessage().equalsIgnoreCase("OK"))
+			if(conn.getResponseCode()<400 && conn.getResponseMessage().equalsIgnoreCase("OK"))
 			{
 //			if(conn.getResponseCode()==200)
 //			{
