@@ -2,6 +2,7 @@ package com.automation.codingchallange;
 
 import java.io.File;
 import java.time.Duration;
+import java.util.function.Function;
 
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -20,17 +21,20 @@ public class FileDownloadAndValidation {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.87/win64/chromedriver-win64.zip");
+		String fileName="chromedriver-win64.zip";
+		File downloadedFile=new File(System.getProperty("user.home")+"/Downloads/"+fileName);
+		//Fluent Wait Declaration
 		Wait<WebDriver>wait=new FluentWait<WebDriver>(driver)
 			    .withTimeout(Duration.ofSeconds(50))
 			    .pollingEvery(Duration.ofSeconds(5))
 			    .ignoring(NoSuchElementException.class);
-	//Need to add custom wait using fluent which will wait until file downloaded successfully
-		Thread.sleep(30000);
-		String fileName="chromedriver-win64.zip";
-		File downloadedFile=new File(System.getProperty("user.home")+"/Downloads/"+fileName);
+		//Method to check wheather file is downloaded successfully
+		boolean fileExist=wait.until((WebDriver)->{
+			return downloadedFile.exists();
+			});
 		try
 		{
-		if(downloadedFile.exists())
+		if(fileExist)
 		{
 			System.out.println("File is exist in mentioned folder");
 		}
@@ -45,7 +49,7 @@ public class FileDownloadAndValidation {
 		}
 		finally
 		{
-			if(downloadedFile.exists())
+			if(fileExist)
 			{
 				if(downloadedFile.delete())
 				{
@@ -53,6 +57,8 @@ public class FileDownloadAndValidation {
 				}
 			}
 		}
+		
+		driver.quit();
 		
 	}
 

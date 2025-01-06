@@ -34,8 +34,6 @@ public class HandlingShadowDOMElement {
        //shadow Host==>shadow Root==>shadow element
        //SearchContext shadow1=driver.findElement(By.cssSelector("#shadow_host")).getShadowRoot();
        //shadow1.findElement(By.cssSelector("input[type='text']")).sendKeys("Prashant");
-       
-       
 	}
 
 }
