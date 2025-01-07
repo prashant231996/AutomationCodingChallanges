@@ -2,20 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14338" started-at="2024-03-09T21:34:36 IST" finished-at="2024-03-09T21:34:51 IST">
+  <suite name="Default suite" duration-ms="12727" started-at="2025-01-07T23:08:32 IST" finished-at="2025-01-07T23:08:45 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14338" started-at="2024-03-09T21:34:36 IST" finished-at="2024-03-09T21:34:51 IST">
-      <class name="com.automation.codingchallange.RedBusCalanderChallange">
-        <test-method status="PASS" signature="testRedBusCalender()[pri:0, instance:com.automation.codingchallange.RedBusCalanderChallange@1b68ddbd]" name="testRedBusCalender" duration-ms="13732" started-at="2024-03-09T21:34:36 IST" finished-at="2024-03-09T21:34:50 IST">
+    <test name="Default test" duration-ms="12727" started-at="2025-01-07T23:08:32 IST" finished-at="2025-01-07T23:08:45 IST">
+      <class name="com.automation.codingchallange.HandlingExcelData">
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.codingchallange.HandlingExcelData@80503]" name="loginTest" duration-ms="11870" started-at="2025-01-07T23:08:33 IST" data-provider="loginData" finished-at="2025-01-07T23:08:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testRedBusCalender -->
-        <test-method status="PASS" signature="closeTheWindow()[pri:0, instance:com.automation.codingchallange.RedBusCalanderChallange@1b68ddbd]" name="closeTheWindow" is-config="true" duration-ms="537" started-at="2024-03-09T21:34:50 IST" finished-at="2024-03-09T21:34:51 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeTheWindow -->
-      </class> <!-- com.automation.codingchallange.RedBusCalanderChallange -->
+        </test-method> <!-- loginTest -->
+      </class> <!-- com.automation.codingchallange.HandlingExcelData -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
