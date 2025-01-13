@@ -5,21 +5,26 @@ public class StringCompression {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String str="abbc";
+		String str="abbcaa";
+		String compressedString=stringCompression(str);
+		System.out.println("String compression is "+compressedString);
+}
+	
+	public static String stringCompression(String str)
+	{
 		str=str.toLowerCase();
-		int count=1;
+		int count=0;
+		StringBuilder strCompressed=new StringBuilder();
 		for(int i=0;i<str.length();i++)
 		{
-			char ch=str.charAt(i);
-			if(i!=0)
+			count++;
+			if(i+1>=str.length() || str.charAt(i+1)!=str.charAt(i))
 			{
-				if(str.charAt(i-1)==ch)
-				{
-					count++;
-					continue;
-				}
+				strCompressed.append(str.charAt(i));
+				strCompressed.append(count);
+				count=0;
 			}
-	   }
-
-}
+		}
+		return strCompressed.toString();
+	}
 }
