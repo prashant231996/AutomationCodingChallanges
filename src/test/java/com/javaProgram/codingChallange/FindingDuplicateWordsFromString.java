@@ -1,6 +1,7 @@
 package com.javaProgram.codingChallange;
 
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class FindingDuplicateWordsFromString {
 
@@ -8,7 +9,8 @@ public class FindingDuplicateWordsFromString {
 		// TODO Auto-generated method stub
        
 		String str="Prashant Jyoti Jyoti";
-		findDuplicateWordsFromString(str);
+		//findDuplicateWordsFromString(str);
+		findDuplicateWordsFromStringApprochTwo(str);
 	}
 	
 	public static void findDuplicateWordsFromString(String str)
@@ -33,6 +35,20 @@ public class FindingDuplicateWordsFromString {
 			if(map.get(key)>1)
 			{
 				System.out.println("Word "+key+" appers "+map.get(key)+" times.");
+			}
+		}
+	}
+	
+	public static void findDuplicateWordsFromStringApprochTwo(String str)
+	{
+		str=str.toLowerCase();
+		String[]words=str.split(" ");
+		HashSet<String> hashSet=new HashSet<String>();
+		for(String word:words)
+		{
+			if(!hashSet.add(word))
+			{
+				System.out.println("Duplicate word is "+word);
 			}
 		}
 	}

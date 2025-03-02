@@ -13,6 +13,13 @@
 	
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<!--<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.29.0</version>
+</dependency>-->
+
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
@@ -21,20 +28,20 @@
 
 
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-api -->
-<dependency>
+<!--<dependency>
   <groupId>org.seleniumhq.selenium</groupId>
   <artifactId>selenium-api</artifactId>
   <version>3.14.0</version>
-</dependency>
+</dependency>-->
 
 
 
 	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
-<dependency>
+<!-- <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-chrome-driver</artifactId>
     <version>3.141.59</version>
-</dependency>
+</dependency>-->
 <!-- Java Selenium Server library -->
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 		<dependency>
