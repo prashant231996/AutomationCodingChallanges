@@ -32,7 +32,7 @@ public class IdentifyDuplicateOptionsFromListBox {
 		Set<String>dropDownOptions=new HashSet<String>();
 		for(WebElement option:options)
 		{
-			if(dropDownOptions.add(option.getText()))
+			if(!dropDownOptions.add(option.getText()))
 			{
 				System.out.println("Duplicate option is "+option.getText());
 			}
