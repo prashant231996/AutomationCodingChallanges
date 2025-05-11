@@ -1,6 +1,7 @@
 package com.javaProgram.codingChallange;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class SecondHighestAndLowestFromArray {
@@ -9,9 +10,14 @@ public class SecondHighestAndLowestFromArray {
 		// TODO Auto-generated method stub
 		
 		int arr[]=new int[]{1,2,3,4,5,6,7};
+	    //Approach 1
 		List<Integer>resultList=findSecondLargestAndSmallest(arr);
 		System.out.println("Second Largest Number: "+resultList.get(0));
 		System.out.println("Second Lowest Number: "+resultList.get(1));
+		//Approch 2
+		Arrays.sort(arr);
+		System.out.println("Second largest number is using approch 2 is "+arr[arr.length-2]);
+		System.out.println("Second smallest number is using approch 2 is "+arr[1]);
 		
 	}
 	
