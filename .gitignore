@@ -1,0 +1,48 @@
+# -------------------------------
+# Java / Maven / Gradle
+# -------------------------------
+
+# Build directories
+target/
+build/
+
+# Output directories for test results
+results/
+*.log
+
+# -------------------------------
+# IDE Files
+# -------------------------------
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+*.nbattrs
+
+# -------------------------------
+# OS-specific
+# -------------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------------
+# Optional: temporary files
+# -------------------------------
+*.tmp
+*.swp
+*.bak
+*.orig
